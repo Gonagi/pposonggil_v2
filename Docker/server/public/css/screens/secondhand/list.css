@@ -20,7 +20,6 @@
     background-color: #0056b3;
 }
 
-
 .post-list {
     display: flex;
     flex-direction: column;
@@ -31,18 +30,15 @@
 .post-item {
     width: 90%;
     max-width: 700px;
-    /* 게시글들 최대 길이 설정 */
     border: 1px solid #0d2aad;
     padding: 20px;
     margin-bottom: 20px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    /* 테두리를 둥글게 */
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-
 }
 
 .post-item .text-content {
@@ -70,4 +66,9 @@
     max-width: 150px;
     max-height: 150px;
     border-radius: 10px;
+}
+
+.image-content {
+    display: flex;
+    flex-direction: column;
 }

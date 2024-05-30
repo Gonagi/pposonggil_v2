@@ -7,22 +7,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>뽀송길</title>
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
 </head>
 
 <body>
     <div class="status-bar">
         <div class="status-bar__column">
             <span>PPOSONG</span>
-            <!-- Icon -->
             <i class="fa-solid fa-cloud" style="color: #9fd8f6;"></i>
         </div>
-
         <div class="status-bar__column">
             <span>ver 0.6.2</span>
-            <!-- version information &Icon-->
         </div>
     </div>
 
@@ -31,7 +25,7 @@
             <i class="fa-solid fa-angle-left fa-xl"></i>
         </div>
         <div class="alt-header__column">
-            <h1 class="alt-header__title">거래 글쓰기</h1>
+            <h1 class="alt-header__title">거래 예약 설정</h1>
         </div>
         <div class="alt-header__column">
             <!-- 헤더 우측에 위치한 홈/마이페이지 버튼 -->
@@ -49,15 +43,12 @@
         </div>
     </header>
 
-    <div class="write-box">
-        <form id="writeFrm">
-            <div class="input-container" id="title-container">
-                <input id="title-box" type="text" name="title" placeholder="제목을 입력하세요" />
+    <div class="appoint-box">
+        <form id="appointFrm">
+            <div class="input-container" id="date-container">
+                <label for="date">날짜:</label>
+                <input type="date" id="date" name="date">
             </div>
-            <div class="input-container" id="content-container">
-                <input id="content-box" type="text" name="content" placeholder="내용을 입력하세요" />
-            </div>
-            <div class="image-container" id="image-container"></div>
             <div class="input-container" id="start-time-container">
                 <label for="startTime">거래 시작 시각:</label>
                 <input type="time" id="startTime" name="startTime">
@@ -67,22 +58,18 @@
                 <input type="time" id="endTime" name="endTime">
             </div>
             <div class="input-container" id="location-container">
-                <input id="location" type="text" name="location" placeholder="거래 위치를 입력하세요" />
-            </div>
-            <div class="input-container" id="price-container">
-                <input id="price-box" type="text" name="price" placeholder="예상 거래 가격을 입력하세요" />
+                <label for="location">위치:</label>
+                <input type="text" id="location" name="location" placeholder="거래 위치를 입력하세요">
             </div>
             <div class="submit-container">
-                <button type="submit" id="submit-btn">게시글 등록</button>
+                <input type="submit" value="거래 일정 확정">
             </div>
         </form>
     </div>
 
-
     <script src="https://kit.fontawesome.com/660f4d6ed1.js" crossorigin="anonymous"></script>
     <script src="/js/back.js"></script>
-    <script src="/js/secondhand/write.js" type="module"></script>
-    <!-- <script src="/js/secondhand/utils.js"></script> -->
+    <script src="/js/secondhand/appoint.js" type="module"></script>
 </body>
 
 </html>

@@ -1,14 +1,32 @@
 .chat-container {
     width: 90%;
     max-width: 700px;
-    margin: 20px auto;
+    margin: 20px auto 20px;
+    /* 상단에 여백 추가 */
     padding: 20px;
-    border: 1px solid #5b6fcb;
+    border: 3px solid #5b6fcb;
     border-radius: 15px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 400px;
     overflow-y: scroll;
+}
+
+.deal-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #b79af0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.deal-button:hover {
+    background-color: #333;
 }
 
 .chat-input {

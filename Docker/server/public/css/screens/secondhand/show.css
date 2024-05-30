@@ -1,3 +1,58 @@
+/* .post-detail {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid #5b6fcb;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-detail h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.post-detail p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.post-detail .location {
+    font-size: 14px;
+    color: #999;
+}
+
+.post-detail img {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.buttons-container button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5b6fcb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons-container button:hover {
+    background-color: #333;
+} */
+/* 
 .post-detail {
     width: 90%;
     max-width: 800px;
@@ -51,4 +106,63 @@
 
 .buttons-container button:hover {
     background-color: #333;
+} */
+
+#postDetail {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+#postDetail h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 0;
+}
+
+#postDetail p {
+    margin: 10px 0;
+    color: #666;
+}
+
+#postDetail .location {
+    font-size: 14px;
+    color: #999;
+}
+
+.image-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-content img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 10px;
+}
+
+#buttons-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#buttons-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#buttons-container button:hover {
+    background-color: #0056b3;
 }
